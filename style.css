@@ -158,14 +158,14 @@ html,body{
     cursor: pointer;
     margin: 2px;
     margin-left: -30px;
-    font-size:16px;
+    font-size:10px;
     font-family: gilroy;
-    padding: 10px 15px;
+    padding: 10px 12px;
     border-radius: 40px;
     color: black;
     background-color: transparent;
     font-weight: 600;
-    border: #d95427 solid 5px;
+    border: #d95427 solid 3px;
     outline: none;
     -webkit-transition: ease-in;
     -o-transition: ease-in;
@@ -191,7 +191,7 @@ html,body{
     height: 90px;
     position: absolute;
     bottom: 12%;
-    left:12%;
+    left:18%;
     scale: 0;
     -webkit-animation: dragon 1s ease 3s 1 normal forwards;
             animation: dragon 1s ease 3s 1 normal forwards;
@@ -358,7 +358,7 @@ html,body{
         scale: 0;
     }
     100%{
-        scale: 1;
+        scale: 2;
     }
     
 }
@@ -367,7 +367,7 @@ html,body{
         scale: 0;
     }
     100%{
-        scale: 1;
+        scale: 2;
     }
     
 }
