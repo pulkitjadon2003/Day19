@@ -1,0 +1,421 @@
+
+@font-face {
+    font-family: vanguard;
+    src: url(./Fontspring-DEMO-vanguardcf-bold.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#nav-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding-left:20px ;
+}
+
+#nav-left img{
+    left: -25%;
+    padding-top:2px ;
+    width: 100px;
+    border-radius: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    scale: 1.4;
+    height: 100px;
+    -webkit-animation-name: logo;
+            animation-name: logo;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    position: absolute;
+    
+}
+
+#nav #nav-right{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    -webkit-animation-name:nav ;
+            animation-name:nav ;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+    top: -100px;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+#nav-right h4{
+    font-size: 18px;
+    font-family: gilroy;
+    font-weight: 500;
+    text-transform: uppercase;
+    -webkit-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: .12s;
+         -o-transition-duration: .12s;
+            transition-duration: .12s;
+    cursor: pointer;
+    
+}
+
+#nav #nav-right h4:hover{
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+#content{
+    height:calc(100% - 80px);
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* background-color: blue; */
+}
+
+#content #con-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    padding: 115px;
+    font-family:gilroy;
+    text-align: center;
+}
+#con-left h1,h3,p{
+    position: relative;
+    -webkit-animation-name:text ;
+            animation-name:text ;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    left: -150%;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+#con-left h1{
+    font-size: 60px;
+    font-family: fantasy;
+    font-weight: 700;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+}
+#con-left h3{
+    -webkit-animation-delay: 4.5s;
+            animation-delay: 4.5s;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#con-left p{
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    font-weight: 500;
+    text-align: initial;
+    margin-bottom: 30px;
+}
+#con-left button{
+    cursor: pointer;
+    margin: 2px;
+    margin-left: -30px;
+    font-size:16px;
+    font-family: gilroy;
+    padding: 10px 15px;
+    border-radius: 40px;
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+    border: #d95427 solid 5px;
+    outline: none;
+    -webkit-transition: ease-in;
+    -o-transition: ease-in;
+    transition: ease-in;
+    -webkit-transition-duration: .2s;
+         -o-transition-duration: .2s;
+            transition-duration: .2s;
+    scale: 0;
+    /* position: absolute; */
+    -webkit-animation: dragon 1s ease 3s 1 normal forwards;
+            animation: dragon 1s ease 3s 1 normal forwards;
+}
+
+#con-left button:hover{
+    background-color: #d95427;
+    border-color: black;
+    font-weight: 800;
+    scale: 1.1;
+    text-align: center;
+}
+
+#con-left img{
+    height: 90px;
+    position: absolute;
+    bottom: 12%;
+    left:12%;
+    scale: 0;
+    -webkit-animation: dragon 1s ease 3s 1 normal forwards;
+            animation: dragon 1s ease 3s 1 normal forwards;
+}
+
+#con-right img{
+    height: 100px;
+    margin: 0 60px ;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    -webkit-animation-name:goku ;
+            animation-name:goku ;
+    -webkit-animation-duration:3s;
+            animation-duration:3s;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes goku {
+    0%{
+        height: 100px;
+        left: 0;
+        top: 50%;
+        rotate: 0;
+    }
+    10%{
+        height: 200px;
+        left: 10%;
+        top: 30%;
+        rotate: -30deg;
+    }
+    20%{
+        height: 200px;
+        left: 25%;
+        top: 50%;
+        rotate: 30deg;
+    }
+    40%{
+        height: 200px;
+        left: 60%;
+        top: 15%;
+        rotate: -15deg;
+    }
+    50%{
+        height: 250px;
+        left: 50%;
+        top: 30%;
+        rotate: 5deg;
+    }
+    65%{
+        height: 350px;
+        left: 50%;
+        top: 35%;
+        rotate: 6deg;
+    }
+    100%{
+        rotate: 0;
+        height: 600px;
+        top:12%;
+        left: 56%
+    }
+    
+}
+
+@keyframes goku {
+    0%{
+        height: 100px;
+        left: 0;
+        top: 50%;
+        rotate: 0;
+    }
+    10%{
+        height: 200px;
+        left: 10%;
+        top: 30%;
+        rotate: -30deg;
+    }
+    20%{
+        height: 200px;
+        left: 25%;
+        top: 50%;
+        rotate: 30deg;
+    }
+    40%{
+        height: 200px;
+        left: 60%;
+        top: 15%;
+        rotate: -15deg;
+    }
+    50%{
+        height: 250px;
+        left: 50%;
+        top: 30%;
+        rotate: 5deg;
+    }
+    65%{
+        height: 350px;
+        left: 50%;
+        top: 35%;
+        rotate: 6deg;
+    }
+    100%{
+        rotate: 0;
+        height: 600px;
+        top:12%;
+        left: 56%
+    }
+    
+}
+
+@-webkit-keyframes text
+ {
+    0%{
+        left: -50%;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes text
+ {
+    0%{
+        left: -50%;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes nav {
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+    
+}
+@keyframes nav {
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+    
+}
+@-webkit-keyframes dragon {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+@keyframes dragon {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+
+@-webkit-keyframes logo {
+    0%{
+        left: -25%;
+        opacity: 0;
+        rotate: 0;
+    }
+    100%{
+        left: 4%;
+        opacity: 1;
+        rotate: 360deg;
+    }
+    
+}
+
+@keyframes logo {
+    0%{
+        left: -25%;
+        opacity: 0;
+        rotate: 0;
+    }
+    100%{
+        left: 4%;
+        opacity: 1;
+        rotate: 360deg;
+    }
+    
+}
+
+@-webkit-keyframes rotate {
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
+
+@keyframes rotate {
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+    
+}
